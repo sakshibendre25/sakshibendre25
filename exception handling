@@ -1,1 +1,66 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class ExceptionsDemo {
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  int dividend = sc.nextInt();
+  int divisor = sc.nextInt();
+  int arr[] = new int [5];
+   Scanner Scanner = null;
+try{
+    int result = dividend/divisor;
+    System.out.println("Your answer is : "+ result);
+     arr[6] = 10;
+}
+catch(ArithemticException e){
+ System.out.println(e.getmessage("Divisor cant be 0!!!"));
+   }
+catch(ArrayIndexOutOfBoundException e){
+ System.out.println(e.getmessage());
+}finally{
+  if (scanner != null{
+      scanner.close();
+ }
+    System.out.println("Program completed");
+    }
+ }
+}
+     
+//nested try catch 
+
+try{
+      System.out.println("I am in first try block!!!");
+   try{
+         arr[6] = 10;
+} catch (Exception e ){
+    System.out.println(e.getmessage());
+   }
+} catch (Exception e){
+     System.out.println(e.getmesssage());
+      }
+  }
+}
+
+//using throw keyword
+
+Scanner sc= new  Scanner(System.in);
+ int age = sc.nextInt();
+   if(age<18){
+     throw new RuntimeException("Sorry you cant vote!!!");
+}else{
+      System.out.println("You are eligible to vote!!!");
+    }
+ }
+}
+
+// using throws keyword
+
+public static void divisiondemo(int division, int divisor) throws ArithemeticException{
+   System.out.println("The  result is: "+ division/divisor);
+}
+  public static void main(String[] args){
+      divisiondemo(dividend 10, divisor 0);
+  }
+}
 
