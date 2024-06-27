@@ -92,7 +92,7 @@ public void actionPerformed(ActionEvent e1)
 try
 {
 int a=Integer.parseInt(t1.getText());
-int b=Integer.parswInt(t2.getText());
+int b=Integer.parseInt(t2.getText());
 int c=a+b;
 l4.setText("Addition is "+c);
 }
