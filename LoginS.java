@@ -7,7 +7,7 @@ JLabel l1,l2,l3,l4;
 JTextField t1;
 JPasswordField t2;
 JButton b1,b2,b3;
-LoginS(string s1)
+LoginS(String s1)
 {
 super(s1);
 }
@@ -17,15 +17,15 @@ LoginS()
 
 void setComponents()
 {
-l1=new JLabel("Welcome to Instagram");
+l1=new JLabel("Welcome to Coding");
 l2=new JLabel("USERNAME");
 l3=new JLabel("PASSWORD");
 l4=new JLabel();
-t1=new JTextfield();
+t1=new JTextField();
 t2=new JPasswordField();
 b1=new JButton("Login");
 b2=new JButton("Clear");
-b= new JButton ("Add");
+b3= new JButton ("Add");
 setLayout(null);
 add(l1);
 add(l2);
@@ -39,7 +39,7 @@ add(b3);
 l1.setBounds(100,50,300,30);
 l2.setBounds(100,200,100,30);
 l3.setBounds(100,350,100,30);
-t4.setBounds(100,550,200,30);
+l4.setBounds(100,550,200,30);
 t1.setBounds(350,200,100,30);
 t2.setBounds(350,350,100,30);
 b1.setBounds(200,450,100,30);
@@ -65,7 +65,7 @@ public void actionPerformed(ActionEvent e1)
 {
 String s1=t1.getText();
 String s2=t2.getText();
-if(s1.equals("sakshi") && s2.equals("bendre"))
+if(s1.equals("sakshibendre") && s2.equals("rutu"))
 {
 l4.setText("Login Succesful");
 }
